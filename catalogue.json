@@ -1,1 +1,52 @@
-
+{
+  "apps": [
+    {
+      "id": "vlc",
+      "name": "VLC",
+      "developer": "VideoLAN",
+      "category": "Video",
+      "price": "Free",
+      "rating": 5,
+      "description": "Lecteur multimédia capable de lire de nombreux formats audio et vidéo.",
+      "image": "images/vlc.png",
+      "spotlight": true,
+      "allStars": true,
+      "picksForYou": false,
+      "topFree": true,
+      "newRelease": false,
+      "games": false
+    },
+    {
+      "id": "wikipedia",
+      "name": "Wikipedia",
+      "developer": "Wikimedia Foundation",
+      "category": "Education",
+      "price": "Free",
+      "rating": 4,
+      "description": "Accédez à l'encyclopédie libre Wikipedia.",
+      "image": "images/wikipedia.png",
+      "spotlight": true,
+      "allStars": true,
+      "picksForYou": true,
+      "topFree": true,
+      "newRelease": false,
+      "games": false
+    },
+    {
+      "id": "7zip",
+      "name": "7-Zip",
+      "developer": "Igor Pavlov",
+      "category": "Utilities",
+      "price": "Free",
+      "rating": 5,
+      "description": "Gestionnaire d'archives avec prise en charge de nombreux formats.",
+      "image": "images/7zip.png",
+      "spotlight": false,
+      "allStars": true,
+      "picksForYou": false,
+      "topFree": true,
+      "newRelease": false,
+      "games": false
+    }
+  ]
+}
