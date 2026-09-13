@@ -4,7 +4,9 @@ Catalog for the Windows 8 / Visual Studio 2012 MetroStore client. Distributed as
 
 ## Inventory and artwork
 
-The catalog contains 318 archived products. Every entry lists its exact downloadable archive, checksum, application-package entries and archive source. Empty files and split language/resource packages are excluded from installation choices. Artwork is extracted from the archived packages: square logos for All Apps, and original splash screens for the home tiles where available. Assets are also bundled with the client for offline browsing.
+The catalog contains 518 archived products and six framework families under `dependencies`. Every entry lists its exact downloadable archive, checksum, application-package entries and archive source. Empty files and split language/resource packages are excluded from installation choices. Artwork is extracted from the archived packages: square logos for All Apps, and original splash screens for the home tiles where available. Assets are also bundled with the client for offline browsing.
+
+Framework artwork uses the original VCLibs and PlayReady package logos and the [Microsoft WinJS logo](https://commons.wikimedia.org/wiki/File:WinJS_logo.png) (Microsoft Corporation, public-domain text logo; trademark rights remain with Microsoft). Each dependency includes `imageSourceUrl`. Original small framework icons are kept at their native resolution.
 
 The publisher owns the original application and artwork. Archive availability does not establish installation compatibility, a Store license, a trusted signing certificate or the continued availability of online services. Minimum Windows versions are taken from the inspected primary package when available; architecture variants can have different versions. Unknown prices are left unknown. Verified free listings include a publisher/source link in `priceSourceUrl`.
 
