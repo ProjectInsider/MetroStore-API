@@ -4,7 +4,7 @@ Catalog for the Windows 8 / Visual Studio 2012 MetroStore client. Distributed as
 
 ## Inventory and artwork
 
-The catalog contains 892 archived products and six framework families under `dependencies`. Every entry lists its exact downloadable archive, checksum, application-package entries and archive source. Empty files and split language/resource packages are excluded from installation choices. Artwork is extracted from the archived packages: square logos for All Apps, and original splash screens for the home tiles where available. Assets are also bundled with the client for offline browsing.
+The catalog contains 926 archived products and six framework families under `dependencies`. Every entry lists its exact downloadable archive, checksum, application-package entries and archive source. Empty files and split language/resource packages are excluded from installation choices. Artwork is extracted from the archived packages: square logos for All Apps, and original splash screens for the home tiles where available. Assets are also bundled with the client for offline browsing.
 
 Framework artwork uses the original VCLibs and PlayReady package logos and the [Microsoft WinJS logo](https://commons.wikimedia.org/wiki/File:WinJS_logo.png) (Microsoft Corporation, public-domain text logo; trademark rights remain with Microsoft). Each dependency includes `imageSourceUrl`. Original small framework icons are kept at their native resolution.
 
@@ -28,6 +28,6 @@ Favorites, ratings, viewing history and notes remain on the device. Best Rated u
 
 ## Updating the catalog
 
-Keep `store.catalogVersion` at 3 or later and `store.catalogRevision` at 6 or later. The updated client rejects older snapshots so a stale cache cannot restore the old colors or hide the bundled additions. Add a stable unique ID, a checked archive URL, `sizeBytes`, `sha1`, and nonempty application entries under `packages` with their exact names, architecture and size. Do not include zero-byte files, dependencies or split resource packages as installable apps. Set `packageName` to an actual application entry. Add the matching logo under `Assets/Catalog` and optional splash image under `Assets/Splash`; use paths beginning with `/Assets/` in JSON. The client uses packaged artwork first and falls back to these GitHub files for newer entries.
+Keep `store.catalogVersion` at 3 or later and `store.catalogRevision` at 7 or later. The updated client rejects older snapshots so a stale cache cannot restore the old colors or hide the bundled additions. Add a stable unique ID, a checked archive URL, `sizeBytes`, `sha1`, and nonempty application entries under `packages` with their exact names, architecture and size. Do not include zero-byte files, dependencies or split resource packages as installable apps. Set `packageName` to an actual application entry. Add the matching logo under `Assets/Catalog` and optional splash image under `Assets/Splash`; use paths beginning with `/Assets/` in JSON. The client uses packaged artwork first and falls back to these GitHub files for newer entries.
 
 The SHA-1 checksum identifies the archived file; it is not a security certificate. The client checks the archive, prepares the APPX, and asks Windows to open it. Windows performs installation separately.
